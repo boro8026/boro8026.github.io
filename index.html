@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation.css">
+</head>
+<body style="background-color: #424242;">
+    <div class="grid-container">
+        <!-- Medium and Large View-->
+        <div class="show-for-medium grid-x grid-padding-x largeHeader center" style="padding-top: .5vh;">
+            <div class="cell medium-12" style="font-size: 2rem;">
+                Brandon Borowiak
+            </div>
+            <div class="cell medium-3">
+                <a href="#" type="button" class="navigation" style="color: white;">Homepage</a>
+            </div>
+            <div class="cell medium-3">
+                <a href="resume.html" type="button" class="navigation">Resume</a>
+            </div>
+            <div class="cell medium-3">
+                <a href="projects.html" type="button" class="navigation">Projects</a>
+            </div>
+            <div class="cell medium-3">
+                <a href="fun.html" type="button" class="navigation">Fun</a>
+            </div>
+        </div>
+
+        <!-- Small View -->
+        <div class="hide-for-medium grid-x grid-padding-x smallHeader">
+            <div class="cell small-10" style="font-size: 1.5rem; padding-top: .4rem;">
+                Brandon Borowiak
+            </div>
+            <div class="cell small-2">
+                <a data-toggle="offCanvasTop"><img src="img/menu.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-top off-canvas-absolute" id="offCanvasTop" data-off-canvas data-transition="overlap">
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <ul class="menu vertical">
+                <li><a href="projects.html" type="button" class="navigation">Projects</a></li>
+                <li><a href="resume.html" type="button" class="navigation">Resume</a></li>
+                <li><a href="fun.html" type="button" class="navigation">Fun</a></li>
+            </ul>
+        </div>
+
+        <div class="off-canvas-content"  data-off-canvas-content>
+            <!-- Medium and large infomation-->
+            <div class="show-for-medium info" style="padding-top: 5%;">
+                <!-- Display a welcome message -->
+                <div style="width: 50%; float:left; padding-left: 20%; text-align:center;">
+                    <h2><b>Welcome!</b></h4>
+                    <p style="font-size: 1.5rem;">
+                        I'm a Computer Science major with a minor in Applied Statistics at the University of St. Thomas (MN).
+                    </p>
+
+                    <p style="font-size: 1.5rem">
+                        My current plans for after school is to continue with my internship from this past summer. Which was working for Nicolet National Bank in Green Bay, WI.
+                        (Yes, I went to the first two Packer's preseason games this season). If this is not where I end up, I know that my goal is to become a software developer/
+                        engineer with no specific industry in mind. I know that I will be able to enjoy whatever industry as long as I am coding.
+                    </p>
+                </div>
+                <!-- Picture of me -->
+                <div style="width:50%; float:left;">
+                    <img src="img/me.PNG" style="padding-left: 10%; padding-top: 5%; float:left;">
+                </div>
+            </div>
+            <!-- Small screen information-->
+            <div class="hide-for-medium info">
+                <!-- Picture of me at the top -->
+                <img src="img/me.PNG">
+                <!-- Display a welcome message-->
+                <div style="text-align:center; padding: .5rem;">
+                    <h2><b>Welcome!</b></h4>
+                    <p style="font-size: 1.5rem;">
+                        I'm a Computer Science major with a minor in Applied Statistics at the University of St. Thomas (MN).
+                    </p>
+                    <p style="font-size: 1.5rem">
+                        My current plans for after school is to continue with my internship from this past summer. Which was working for Nicolet National Bank in Green Bay, WI.
+                        (Yes, I went to the first two Packer's preseason games this season). If this is not where I end up, I know that my goal is to become a software developer/
+                        engineer with no specific industry in mind. I know that I will be able to enjoy whatever industry as long as I am coding.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
