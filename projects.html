@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation.css">
+</head>
+<body style="background-color: #424242;">
+    <div class="grid-container">
+        <!-- Medium and Large View-->
+        <div class="show-for-medium grid-x grid-padding-x largeHeader center" style="padding-top: 1.5vh;">
+            <div class="cell medium-12" style="font-size: 2rem;">
+                Brandon Borowiak
+            </div>
+            <div class="cell medium-3">
+                <a href="index.html" type="button" class="navigation">Homepage</a>
+            </div>
+            <div class="cell medium-3">
+                <a href="resume.html" type="button" class="navigation">Resume</a>
+            </div>
+            <div class="cell medium-3">
+                <a href="" type="button" class="navigation" style="color: white;">Projects</a>
+            </div>
+            <div class="cell medium-3">
+                <a href="fun.html" type="button" class="navigation">Fun</a>
+            </div>
+        </div>
+
+        <!-- Small View -->
+        <div class="hide-for-medium grid-x grid-padding-x smallHeader">
+            <div class="cell small-10" style="font-size: 1.5rem; padding-top: .4rem;">
+                Brandon Borowiak
+            </div>
+            <div class="cell small-2">
+                <a data-toggle="offCanvasTop"><img src="img/menu.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-top off-canvas-absolute" id="offCanvasTop" data-off-canvas data-transition="overlap">
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <ul class="menu vertical">
+                <li><a href="index.html" type="button" class="navigation">Homepage</a></li>
+                <li><a href="resume.html" type="button" class="navigation">Resume</a></li>
+                <li><a href="fun.html" type="button" class="navigation">Fun</a></li>
+            </ul>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- Display the medium and large information -->
+            <div class="show-for-medium info">
+                <div class="projectItem" style="border-top: 1px solid #424242">
+                    <!-- Hug The Angry Jarvis Description-->
+                    <h4 style="padding-top: 1rem;">"Hug The Angry Jarvis" Game</h4>
+                    <div>
+                        <span style="width: 75%; display: inline-block;">
+                            This was a game created in Java during my Object-Oriented Programming course with Dr. Sawin.
+                            It consisted of two threaded players (user controlled, and AI controlled) moving throughout the board.
+                            The catch was that the board was entirely hidden until the player had visited a certain spot on the board.
+                            This made it very difficult to locate the acutal position of the Angry Jarvis. Finally, the Angry Jarvis
+                            would lay homework traps around the board (close to where he was located at the time of creating one), and
+                            if the player were to land on one of these spots, they would be stuck and unable to move for a short time.
+                            </br>
+                        </span>
+                        <!-- Picture of output -->
+                        <img src="img/finalJarvis.PNG" style="display: inline-block">
+                    </div>
+                </div>
+
+                <div class="projectItem">
+                    <!-- Sudoku Solver Description-->
+                    <h4>Sudoku Solver</h4>
+                    <div>
+                        <span style="width: 75%; display: inline-block;">
+                            Another project was an automatic solver for any sudoku solver. I randomly did this one night because my Dad was solving one,
+                            and I was convinced that I could write an algorithm to solve the puzzle before he managed to do it by hand (even with probably
+                            a couple hour head start). It's be no means an advanced algorithm as it is simply a brute force algorithm that will try every
+                            possible until the end is reached.
+                            </br></br>
+                        </span>
+                        <!-- Display the output of the sudoku solver -->
+                        <img src="img/sudokuSolve.png" style="display: inline-block;">
+                    </div>
+                </div>
+
+                <!-- NNB Check Order Description-->
+                <div class="projectItem" style="border-bottom: 0;">
+                    <h4>Customer Onboarding Check Ordering</h4>
+                    This project took place during my internship with Nicolet National Bank. Which is a community bank out of Green Bay, WI. This was
+                    the first project assigned to me, and the goal was to create a user interface with the Salesforce Lightning Component Framework
+                    for bankers to select people associated with a newly created bank account. Taking the users selected from the user interface and
+                    sending their information in a payload to an external company to automatically populate their information in a new check order.</br>
+                    <img src="img/CheckOrder.png">
+                </div>
+            </div>
+
+            <!-- Small Screen Information-->
+            <div class="hide-for-medium info">
+                <div style="text-align: center;">
+                    <h2>Projects</h2>
+                </div>
+                <div class="projectItem" style="border-top: 1px solid #424242">
+                    <h4>"Hug The Angry Jarvis" Game</h4>
+                    <div>
+                        <span style="width: 75%; display: inline-block;">
+                            This was a game created in Java during my Object-Oriented Programming course with Dr. Sawin.
+                            It consisted of two threaded players (user controlled, and AI controlled) moving throughout the board.
+                            The catch was that the board was entirely hidden until the player had visited a certain spot on the board.
+                            This made it very difficult to locate the acutal position of the Angry Jarvis. Finally, the Angry Jarvis
+                            would lay homework traps around the board (close to where he was located at the time of creating one), and
+                            if the player were to land on one of these spots, they would be stuck and unable to move for a short time.
+                            </br>
+                        </span>
+                        <img src="img/finalJarvis.PNG" style="display: inline-block">
+                    </div>
+                </div>
+
+                <div class="projectItem">
+                    <h4>Sudoku Solver</h4>
+                    <div>
+                        <span style="width: 75%; display: inline-block;">
+                            Another project was an automatic solver for any sudoku solver. I randomly did this one night because my Dad was solving one,
+                            and I was convinced that I could write an algorithm to solve the puzzle before he managed to do it by hand (even with probably
+                            a couple hour head start). It's be no means an advanced algorithm as it is simply a brute force algorithm that will try every
+                            possible until the end is reached.
+                            </br></br>
+                        </span>
+                        <img src="img/sudokuSolve.png">
+                    </div>
+                </div>
+
+                <div class="projectItem" style="border-bottom: 0; margin-bottom: 1.5%;">
+                    <h4>Customer Onboarding Check Ordering</h4>
+                    This project took place during my internship with Nicolet National Bank. Which is a community bank out of Green Bay, WI. This was
+                    the first project assigned to me, and the goal was to create a user interface with the Salesforce Lightning Component Framework
+                    for bankers to select people associated with a newly created bank account. Taking the users selected from the user interface and
+                    sending their information in a payload to an external company to automatically populate their information in a new check order.
+                    <img src="img/CheckOrder.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
