@@ -1,0 +1,53 @@
+html,body{
+    height: 100vh;
+    width: 98vw;
+    background-color: white;
+}
+
+.largeHeader{
+    background: #424242;
+    color: white;
+    font-size: 1.5rem;
+    height: 100px;
+}
+
+.smallHeader{
+    background: #424242;
+    color: white;
+    font-size: 2rem;
+    height: 6vh;
+}
+
+.navigation{
+    text-align: center;
+    color: skyblue;
+}
+.navigation:hover{
+    text-align: center;
+    color: #0392a8;
+}
+
+.info{
+    background-color: white;
+    float: left;
+    width: 92vw;
+    min-height: 88vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+ul,li{
+    font-size: 1.3rem;
+}
+
+u{
+    color: skyblue;
+}
+
+.center{
+    text-align: center;
+}
+
+.resumeSize{
+    height: calc(100vh - 100px);
+}
