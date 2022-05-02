@@ -1,0 +1,155 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>St. Paul Crime</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+    <div style="background-color: #424242; min-width: 100vw;">
+        <div class="grid-container" >
+            <!-- Medium and Large View-->
+            <div class="show-for-medium grid-x grid-padding-x largeHeader center" style="padding-top: .5vh;">
+                <div class="cell medium-12" style="font-size: 2rem;">
+                    Brandon Borowiak
+                </div>
+                <div class="cell medium-4">
+                    <a href="index.html" type="button" class="navigation">Homepage</a>
+                </div>
+                <div class="cell medium-4">
+                    <a href="resume.html" type="button" class="navigation">Resume</a>
+                </div>
+                <div class="cell medium-4">
+                    <a href="#" type="button" class="navigation" data-toggle="projects-dropdown">Projects</a>
+                </div>
+            </div>
+
+            <!-- Small View -->
+            <div class="hide-for-medium grid-x grid-padding-x smallHeader">
+                <div class="cell small-10" style="font-size: 1.5rem; padding-top: .4rem;">
+                    Brandon Borowiak
+                </div>
+                <div class="cell small-2">
+                    <a data-toggle="offCanvasTop"><img src="img/menu.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown-pane" id="projects-dropdown" data-dropdown data-auto-focus="true" style="font-size: 1.5rem;">
+        <div>
+            <a href="hugTheAngryJarvis.html" type="button" class="navigation">Hug the Angry Jarvis</a>
+        </div>
+        <div>
+            <a href="#" type="button" class="navigation" style="color: black;">St. Paul Crime</a>
+        </div>
+        <div>
+            <a href="existentialPaper.html" type="button" class="navigation">Existential America</a>
+        </div>
+    </div>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-top off-canvas-absolute" id="offCanvasTop" data-off-canvas data-transition="overlap">
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <ul class="menu vertical">
+                <li><a href="index.html" type="button" class="navigation">Homepage</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="resume.html" type="button" class="navigation">Resume</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="hugTheAngryJarvis.html" type="button" class="navigation">Hug the Angry Jarvis</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="#" type="button" class="navigation" style="color: white;">St. Paul Crime</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="existentialPaper.html" type="button" class="navigation">Existential America</a></li>
+            </ul>
+        </div>
+
+        <div class="off-canvas-content"  data-off-canvas-content>
+            <div class="show-for-medium info">
+                <h3 style="padding-top: 1rem;">St. Paul Crime Map</h3>
+                <div>
+                    <p>
+                        This is a project where I worked on a team of 3, and we had to create an interactive, responsive, single-page application.
+                        Our page would use the Leaflet and Nominatim and RESTful API to allow the user investigate crimes from verious neighborhoods
+                        within St. Paul, MN. The Vue.js framework was also used to assist in making the application to the user interactions. My group
+                        received top marks for the assignment.
+                    </p>
+                    <p>
+                        Following the instructions within the README on github, one can also load up this application as a local host. We provided a number
+                        of interactions, including: an address that will automatically shift the map to that location, crime types to filter only certain
+                        types of crimes at a time, neighborhoods for specific areas, and other filters like time.
+                    </p>
+                    <p>
+                        The table at the bottom and the map will update as the filters at the top are changed. On top of this, we also have the crimes
+                        update as the user changes where they are looking on the map. For example, when zooming in on a specific location, the table
+                        will update so that only crimes that would be visible on the map will show up on the table. Finally, we added the ability
+                        to add the crime to the map so that the user can see exactly where the crime took place.
+                    </p>
+                    <p>
+                        <a href="https://github.com/gudo1013/webdevproject3" target="_blank">Click here to visit the github page for the project</a>
+                    </p>
+                </br>
+                    <!-- Picture of output -->
+                    <div style="width:30vw; float:left;">
+                        <h4>Here is how the map looks after some of the data points have been added</h4>
+                        <img src="img/map2.JPG" style="display: inline-block">
+                    </div>
+                    <div style="width: 60vw; padding-left: 5vw; float:left;">
+                        <h4>This is what the first four columns looked like after zooming on this area of St. Paul</h4>
+                        <img src="img/table2.JPG" style="display: inline-block">
+                    </div>
+                </div>
+            </div>
+            <div class="hide-for-medium info">
+                <h3 style="padding-top: 1rem;">St. Paul Crime Map</h3>
+                <div>
+                    <p>
+                        This is a project where I worked on a team of 3, and we had to create an interactive, responsive, single-page application.
+                        Our page would use the Leaflet and Nominatim and RESTful API to allow the user investigate crimes from verious neighborhoods
+                        within St. Paul, MN. The Vue.js framework was also used to assist in making the application to the user interactions. My group
+                        received top marks for the assignment.
+                    </p>
+                    <p>
+                        Following the instructions within the README on github, one can also load up this application as a local host. We provided a number
+                        of interactions, including: an address that will automatically shift the map to that location, crime types to filter only certain
+                        types of crimes at a time, neighborhoods for specific areas, and other filters like time.
+                    </p>
+                    <p>
+                        The table at the bottom and the map will update as the filters at the top are changed. On top of this, we also have the crimes
+                        update as the user changes where they are looking on the map. For example, when zooming in on a specific location, the table
+                        will update so that only crimes that would be visible on the map will show up on the table. Finally, we added the ability
+                        to add the crime to the map so that the user can see exactly where the crime took place.
+                    </p>
+                    <p>
+                        <a href="https://github.com/gudo1013/webdevproject3" target="_blank">Click here to visit the github page for the project</a>
+                    </p>
+                </br>
+                    <!-- Picture of output -->
+                    <div style="width:30vw; float:left;">
+                        <h4>Here is how the map looks after some of the data points have been added</h4>
+                        <img src="img/map2.JPG" style="display: inline-block">
+                    </div>
+                    <div style="width: 60vw; padding-left: 5vw; float:left;">
+                        <h4>This is what the first four columns looked like after zooming on this area of St. Paul</h4>
+                        <img src="img/table2.JPG" style="display: inline-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>

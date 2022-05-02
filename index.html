@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+    <div style="background-color: #424242; min-width: 100vw;">
+        <div class="grid-container" >
+            <!-- Medium and Large View-->
+            <div class="show-for-medium grid-x grid-padding-x largeHeader center" style="padding-top: .5vh;">
+                <div class="cell medium-12" style="font-size: 2rem;">
+                    Brandon Borowiak
+                </div>
+                <div class="cell medium-4">
+                    <a href="#" type="button" class="navigation" style="color: white;">Homepage</a>
+                </div>
+                <div class="cell medium-4">
+                    <a href="resume.html" type="button" class="navigation">Resume</a>
+                </div>
+                <div class="cell medium-4">
+                    <a href="#" type="button" class="navigation" data-toggle="projects-dropdown">Projects</a>
+                </div>
+            </div>
+
+            <!-- Small View -->
+            <div class="hide-for-medium grid-x grid-padding-x smallHeader">
+                <div class="cell small-10" style="font-size: 1.5rem; padding-top: .4rem;">
+                    Brandon Borowiak
+                </div>
+                <div class="cell small-2">
+                    <a data-toggle="offCanvasTop"><img src="img/menu.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown-pane" id="projects-dropdown" data-dropdown data-auto-focus="true" style="font-size: 1.5rem;">
+        <div>
+            <a href="hugTheAngryJarvis.html" type="button" class="navigation">Hug the Angry Jarvis</a>
+        </div>
+        <div>
+            <a href="stPaulCrime.html" type="button" class="navigation">St. Paul Crime</a>
+        </div>
+        <div>
+            <a href="existentialPaper.html" type="button" class="navigation">Existential America</a>
+        </div>
+    </div>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-top off-canvas-absolute" id="offCanvasTop" data-off-canvas data-transition="overlap">
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <ul class="menu vertical">
+                <li><a href="#" type="button" class="navigation" style="color: white;">Homepage</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="resume.html" type="button" class="navigation">Resume</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="hugTheAngryJarvis.html" type="button" class="navigation">Hug the Angry Jarvis</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="stPaulCrime.html" type="button" class="navigation">St. Paul Crime</a></li>
+            </ul>
+            <ul class="menu vertical">
+                <li><a href="existentialPaper.html" type="button" class="navigation">Existential America</a></li>
+            </ul>
+        </div>
+
+        <div class="off-canvas-content"  data-off-canvas-content>
+            <div class="hide-for-small-only">
+                <div>
+                <div style="width:25vw; float:left; padding-top: 5vh; padding-left: 5vh;">
+                    <img src="img/me.PNG" style="width: 100%; border-radius: 50%; padding-bottom: 1vh;">
+                </div>
+                <div style="width: 60vw; padding-left: 5vw; float:left; text-align:center;">
+                    <h2 style="padding-top: 2rem;"><b>Welcome!</b></h2>
+                    <p style="font-size: 1.5rem;">
+                        I'm a Computer Science major with a minor in Applied Statistics at the University of St. Thomas (MN). I will be graduating in May 2022.
+                        Shortly after graduation, I will be moving to Green Bay, WI. Here, I will continue my career with Nicolet National Bank. I started working
+                        this company in June 2021 as an intern, but will be full-time post graduation.
+                    </p>
+
+                    <p style="font-size: 1.5rem;">
+                        Below, you will find a video where I go in depth into who I am. Elsewhere in this website, you will find a link to my resume, as well 
+                        as a variety of projects that I have completed during my time as an undergraduate student at the University of St. Thomas. 
+                        This includes a project called "Hug the Angry Jarvis," another project that mapped crime data within St. Paul, MN. Finally, 
+                        there is also a paper that I wrote during an english course during mysophomore year.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+
+
+            <div class="hide-for-medium info">
+                <img src="img/me.PNG" style="width: 100%; border-radius: 50%; padding-top: 1vh;">
+                <div style="text-align:center; padding: .5rem;">
+                    <h2 style="padding-top: 2rem;"><b>Welcome!</b></h2>
+                    <p style="font-size: 1.5rem;">
+                        I'm a Computer Science major with a minor in Applied Statistics at the University of St. Thomas (MN). I will be graduating in May 2022.
+                        Shortly after graduation, I will be moving to Green Bay, WI. Here, I will continue my career with Nicolet National Bank. I started working
+                        this company in June 2021 as an intern, but will be full-time post graduation.
+                    </p>
+
+                    <p style="font-size: 1.5rem;">
+                        Below, you will find a video where I go in depth into who I am. Elsewhere in this website, you will find a link to my resume, as well 
+                        as a variety of projects that I have completed during my time as an undergraduate student at the University of St. Thomas. 
+                        This includes a project called "Hug the Angry Jarvis," another project that mapped crime data within St. Paul, MN. Finally, 
+                        there is also a paper that I wrote during an english course during mysophomore year.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
